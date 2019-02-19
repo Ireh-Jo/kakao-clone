@@ -31,6 +31,23 @@
     margin-right: 10px;
 }
 
+.friends__section-row img:hover {
+    animation: .6s rotateFriend ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes rotateFriend {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg) scale(0.9);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
 .friends__section-row a {
     text-decoration: none;
     color: inherit;
